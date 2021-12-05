@@ -14,7 +14,7 @@ import '../box-styles.css'
 // matches what the text says it should be as well as `...styles`
 function Box({className, style, children}) {
   return (
-    <div className={className} style={style}>
+    <div className={className} style={{fontStyle: 'italic', ...style}}>
       {children}
     </div>
   )
